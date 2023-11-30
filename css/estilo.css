@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+#cabecera-envios {
+    background-color: black;
+    width: 100%;
+}
+
+#cabecera-envios h2 {
+    color: white;
+    text-align: center;
+    font-size: small;
+    padding: 5px;
+}
+
+#cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+#cabecera .lupa {
+    width: 25px;
+}
+
+
+#cabecera .logo img {
+    width: 300px;
+}
+
+#cabecera .carrito img {
+    width: 25px;
+}
+
+#menu-principal ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+#menu-principal a {
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#menu-principal a:hover {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+/* main */
+
+.mx-auto {
+    margin: 20px;
+}
+
+#garantias  {
+    text-align: center;
+}
+
+#garantias div {
+    display: inline-block;
+    padding: 100px;
+    font-weight: bold;
+}
+
+#garantias img {
+    width: 100px;
+    display: block;
+    padding: 50px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+footer img {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#politicas a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#redesSociales img {
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer p {
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+div p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
