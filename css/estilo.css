@@ -5,6 +5,19 @@
 
 /* header */
 
+
+h1 {
+    text-align: center;
+}
+
+div p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
 #cabecera-envios {
     background-color: black;
     width: 100%;
@@ -80,6 +93,9 @@
     padding: 50px;
 }
 
+
+/* footer */
+
 footer {
     text-align: center;
     background-color: black;
@@ -111,17 +127,3 @@ footer p {
     padding-bottom: 20px;
     padding-top: 5px;
 }
-
-
-h1 {
-    text-align: center;
-}
-
-div p {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
