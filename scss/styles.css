@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -55,22 +56,42 @@ h2 {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  #cabecera-envios {
+    min-height: 100%;
+  }
+  #cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #cabecera .logo {
+    width: 30%;
+  }
+}
 .mx-auto {
   margin: 20px;
 }
 
 #garantias {
   text-align: center;
+  margin-bottom: 100px;
 }
 #garantias div {
   display: inline-block;
-  padding: 100px;
+  margin: auto;
   font-weight: bold;
 }
 #garantias img {
   width: 150px;
   display: block;
   padding: 25px;
+}
+
+#banner-secundario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .productos {
@@ -86,11 +107,83 @@ h2 {
   border-color: white;
 }
 
+#main-aside {
+  display: flex;
+  flex-direction: row;
+}
+#main-aside #contenido-articulos {
+  width: 70%;
+}
+#main-aside #contenido-articulos img {
+  min-width: 100%;
+}
+#main-aside #informacion-articulos {
+  width: 20%;
+}
+#main-aside #informacion-articulos #encabezado-remera h1 {
+  font-size: large;
+}
+#main-aside #informacion-articulos #encabezado-remera p {
+  text-align: center;
+  font-weight: bold;
+}
+#main-aside #informacion-articulos #talle label {
+  margin-bottom: 15px;
+  color: white;
+  background-color: black;
+}
+#main-aside #informacion-articulos #talle .btn-check:checked + .btn {
+  background-color: white; /* Cambia el color aquí */
+  color: black;
+}
+#main-aside #informacion-articulos #segunda-descrip h2 {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#main-aside #informacion-articulos #segunda-descrip p {
+  font-size: small;
+}
+
+@media (max-width: 768px) {
+  #main-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #main-aside #contenido-articulos {
+    min-width: 100%;
+  }
+  #main-aside #informacion-articulos {
+    min-width: 100%;
+  }
+  #garantias {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  #banner-secundario {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  #banner-secundario img {
+    margin-bottom: 10px;
+  }
+  #banner img {
+    width: 0%;
+  }
+}
 footer {
   text-align: center;
   background-color: black;
   color: white;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 footer img {
   width: 200px;
@@ -112,4 +205,11 @@ footer #redesSociales img {
 footer p {
   padding-bottom: 20px;
   padding-top: 5px;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  padding-bottom: 20em;
+  min-height: 100%;
 }/*# sourceMappingURL=styles.css.map */

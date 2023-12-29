@@ -1,0 +1,34 @@
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
+  
+    img {
+      width: 200px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    #politicas a {
+      list-style-type: none;
+      text-decoration: none;
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    #redesSociales img {
+      width: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    p {
+      padding-bottom: 20px;
+      padding-top: 5px;
+    }
+  }

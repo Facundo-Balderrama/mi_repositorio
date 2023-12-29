@@ -1,0 +1,135 @@
+.mx-auto {
+    margin: 20px;
+  }
+  
+  #garantias {
+    text-align: center;
+    margin-bottom: 100px;
+  
+    div {
+      display: inline-block;
+      margin: auto;
+      font-weight: bold;
+    }
+  
+    img {
+      width: 150px;
+      display: block;
+      padding: 25px;
+    }
+  }
+  
+  #banner-secundario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #boton {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-color: white;
+  }
+
+  #main-aside {
+    display: flex;
+    flex-direction: row;
+
+    #contenido-articulos {
+        width: 70%;
+
+        img {
+          min-width: 100%;
+        }
+    }
+
+    #informacion-articulos {
+        width: 20%;
+
+        #encabezado-remera {
+            
+            h1 {
+                font-size: large;
+            }
+
+            p {
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+
+        #talle {
+
+            label {
+                margin-bottom: 15px;
+                color: white;
+                background-color: black;
+            }
+            .btn-check:checked + .btn {
+              background-color: white; /* Cambia el color aquí */
+              color: black;
+            }
+            
+        }
+
+        #segunda-descrip {
+
+            h2 {
+                text-align: left;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-size: small;
+            }
+        }
+    }
+  }
+
+  //mobile
+
+  @media (max-width: 768px) {
+    #main-aside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      #contenido-articulos {
+        min-width: 100%;
+      }
+
+      #informacion-articulos {
+        min-width: 100%;
+      }
+    }
+    #garantias {
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #banner-secundario {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            img {
+              margin-bottom: 10px;
+            }
+    }
+    #banner {
+      img {
+        width: 0%;
+      }
+    }
+}

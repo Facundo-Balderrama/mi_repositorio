@@ -1,0 +1,76 @@
+h1,
+  div p,
+  h2 {
+    text-align: center;
+  }
+  
+  #cabecera-envios {
+    background-color: black;
+    width: 100%;
+  
+    h2 {
+      color: white;
+      text-align: center;
+      font-size: small;
+      padding: 5px;
+    }
+  }
+  
+  #cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  
+    .lupa {
+      width: 25px;
+    }
+  
+    .logo img {
+      width: 300px;
+    }
+  
+    .carrito img {
+      width: 25px;
+    }
+  }
+  
+  #menu-principal {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 50px;
+  
+      a {
+        color: black;
+        padding-left: 50px;
+        padding-right: 50px;
+  
+        &:hover {
+          color: white;
+          background-color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+//mobile
+
+@media (max-width: 768px) {
+    #cabecera-envios {
+        min-height: 100%;
+    }
+    #cabecera {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .logo {
+            width: 30%;
+        }
+    }
+}
